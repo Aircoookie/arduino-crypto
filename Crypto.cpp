@@ -107,6 +107,11 @@ static const byte sha256_padding[64] =
  */
 SHA256::SHA256()
 {
+    init();
+}
+
+void SHA256::init()
+{
     total[0] = 0;
     total[1] = 0;
     state[0] = 0x6A09E667;
