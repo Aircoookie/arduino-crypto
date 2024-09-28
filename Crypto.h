@@ -35,6 +35,7 @@ class SHA256
 {
     public:
         SHA256();
+        void init();
         /**
          * Update the hash with new data
          */
